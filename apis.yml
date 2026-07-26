@@ -1,7 +1,26 @@
 aid: digit
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/digit.png
 name: Digit
-description: 'Digit is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Digit was a consumer fintech company that built an automated personal-savings
+  app: it analyzed a user''s checking-account activity and quietly moved small, safe amounts
+  into an FDIC-insured savings account, later expanding into automated investing and
+  retirement (Digit Invest, Digit Retirement). Founded in 2013 in San Francisco by Ethan
+  Bloch and backed by GV (Google Ventures) among others, Digit was acquired by Oportun in
+  late 2021 and folded into Oportun''s savings product. The standalone Digit brand is now
+  retired: digit.co and hellodigit.com redirect to oportun.com/savings, and there is no
+  public developer portal, documentation, or API. This profile is retained as a portfolio
+  lead with no active developer surface.'
 url: https://raw.githubusercontent.com/api-evangelist/digit/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +28,21 @@ x-backed-by:
 - gv
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: oportun
+x-brand-status: retired-redirects-to-oportun
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Fintech
+- Personal Finance
+- Savings
+- Automated Savings
+- Banking
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,4 +51,9 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://digit.co
+  url: https://digit.co
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
